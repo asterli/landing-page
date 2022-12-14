@@ -3,10 +3,15 @@ body {
 }
 ul {
     list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 4px 64px;
+    gap: 16px;
 }
 
 a {
     text-decoration: none;
+    padding: 8px;
 }
 
 .maintext {
@@ -23,6 +28,7 @@ a {
 .logo {
     color: #E5E7EB;
     font-size: 24px;
+    padding: 0 64px;
 }
 
 .header, .footer {
@@ -32,6 +38,16 @@ a {
 button {
     background-color: #3882F6;
     color: #E5E7EB;
+    display: block;
+    border: 1px solid #F9FAF8;
+    padding: 8px 24px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+#noborder {
+    border: none;
 }
 
 .modal {
@@ -51,4 +67,54 @@ button {
 em {
     font-size: 36px;
     font-weight: 200;
+}
+
+.headercontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.headercontainer2 {
+    display: flex;
+    padding: 64px;
+    justify-content: space-around;
+}
+
+.headercontainer3 {
+    width: 400px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.information {
+    text-align: center;
+}
+
+.title {
+    padding: 32px;
+    margin-bottom: 8px;
+}
+
+.infocontainer {
+    display: flex;
+    gap: 52px;
+    justify-content: center;
+    margin-bottom: 74px;
+}
+
+.info {
+    max-width: 150px;
+}
+
+#infoimg {
+    width: 150px;
+    height: 150px;
+}
+
+button, img {
+    border-radius: 8px;
 }
