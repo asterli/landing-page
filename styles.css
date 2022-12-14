@@ -1,5 +1,5 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Roboto, sans-serif, Helvetica, Arial;
 }
 ul {
     list-style-type: none;
@@ -29,6 +29,7 @@ a {
     color: #E5E7EB;
     font-size: 24px;
     padding: 0 64px;
+    font-weight: bold;
 }
 
 .header, .footer {
@@ -39,11 +40,15 @@ button {
     background-color: #3882F6;
     color: #E5E7EB;
     display: block;
-    border: 1px solid #F9FAF8;
-    padding: 8px 24px;
+    border: 2px solid #F9FAF8;
+    padding: 8px 36px;
     font-weight: bold;
     font-size: 18px;
     margin-top: 8px;
+}
+
+#border {
+    margin-top: 0;
 }
 
 #noborder {
@@ -52,6 +57,20 @@ button {
 
 .modal {
     background-color: #3882F6;
+    margin: 100px;
+    border-radius: 8px;
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#call {
+    padding: 0;
+}
+
+.modalcontainer {
+    padding: 32px;
 }
 
 .title {
@@ -62,6 +81,9 @@ button {
 
 .quote {
     background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 205px;
 }
 
 em {
@@ -69,9 +91,17 @@ em {
     font-weight: 200;
 }
 
+.author {
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
 .headercontainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 16px;
 }
 
@@ -117,4 +147,13 @@ em {
 
 button, img {
     border-radius: 8px;
+}
+
+.footer {
+    font-size: 18px;
+    color: #F9FAF8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
 }
